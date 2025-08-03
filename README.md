@@ -14,4 +14,21 @@ This project demonstrates a simple full-stack setup:
 - Easy switch of backend port if 5050 is in use
 - Includes example for `/api/chat` POST endpoint
 
+## Open API Key 
+- Add a .env file inside backend folder
+- Generate API Key from https://platform.openai.com/api-keys
+- Add like OPENAI_API_KEY=key inside .env file
 
+## FrontEnd
+### bash
+- npm start
+
+## Back End
+### bash
+npm start
+- Path src/backend
+
+## Note
+The new OpenAI SDK expects the global fetch API, which is available natively in Node.js v18+.
+
+If you’re on Node v16 or below, fetch does not exist globally.
