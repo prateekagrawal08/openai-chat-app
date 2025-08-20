@@ -9,7 +9,7 @@ function App() {
             content: 'You are a helpful general knowledge expert.'
         },
         {
-            role: 'user',usl
+            role: 'user',
             content: 'Who invented the television?'
         }
     ];
