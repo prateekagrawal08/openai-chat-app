@@ -14,6 +14,7 @@ A robust full-stack template for building AI-powered chat and text applications 
 - **CORS configured** for smooth local development
 - **Port flexibility** (backend defaults to 5050, easy to change)
 - **Ready-to-use** `/api/chat` POST endpoint for AI conversations
+- **Sample prompt scripts** for translation and summarization in `src/prompts`
 
 ---
 
@@ -33,11 +34,12 @@ A robust full-stack template for building AI-powered chat and text applications 
 
 ```
 /
-├── frontend/      # React app
-└── backend/       # Express server (proxy to OpenAI)
-      ├── server.js
-      ├── .env     # (your OpenAI API key goes here, never commit)
-      └── ...
+├── public/          # Static assets
+├── src/
+│   ├── App.js       # React app
+│   ├── backend/     # Express server (proxy to OpenAI)
+│   └── prompts/     # Example prompt scripts
+└── ...
 ```
 
 ---
@@ -47,7 +49,7 @@ A robust full-stack template for building AI-powered chat and text applications 
 ### 1. **Backend**
 
 ```bash
-cd backend
+cd src/backend
 npm install
 npm start
 ```
@@ -56,7 +58,6 @@ npm start
 ### 2. **Frontend**
 
 ```bash
-cd frontend
 npm install
 npm start
 ```
@@ -86,6 +87,19 @@ Or via terminal:
 ```bash
 curl -X POST http://localhost:5050/api/chat   -H "Content-Type: application/json"   -d '{"messages":[{"role":"user","content":"Hello!"}]}'
 ```
+
+---
+
+## 🧪 Sample Prompt Scripts
+
+Example scripts live in `src/prompts` and demonstrate different tasks:
+
+```bash
+node src/prompts/translate.js   # Translate English to Spanish
+node src/prompts/summarize.js   # Summarize a paragraph
+```
+
+Ensure your `OPENAI_API_KEY` is available in the environment when running these.
 
 ---
 
