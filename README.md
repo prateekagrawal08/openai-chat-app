@@ -97,9 +97,10 @@ Example scripts live in `src/prompts` and demonstrate different tasks:
 ```bash
 node src/prompts/translate.js   # Translate English to Spanish
 node src/prompts/summarize.js   # Summarize a paragraph
+node src/prompts/podcast.js     # Recommend a podcast episode with Supabase
 ```
 
-Ensure your `OPENAI_API_KEY` is available in the environment when running these.
+Ensure your `OPENAI_API_KEY` is available in the environment when running these. For `podcast.js`, also set `SUPABASE_URL` and `SUPABASE_KEY`.
 
 ---
 
