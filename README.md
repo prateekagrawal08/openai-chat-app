@@ -18,14 +18,25 @@ A robust full-stack template for building AI-powered chat and text applications 
 
 ---
 
-## 🗝️ OpenAI API Key Setup
+## 🗝️ API Key Setup
+
+### OpenAI
 
 1. **Get your OpenAI API Key:**
    - Go to [OpenAI API Keys page](https://platform.openai.com/api-keys) and generate a new key.
-
-2. **Create a `.env` file** in the `backend` directory (never commit this file!):
+2. **Create a `.env` file** in the `backend` directory (never commit this file!) and add:
    ```
    OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   ```
+
+### Supabase (for `podcast.js`)
+
+1. **Get your Supabase credentials:**
+   - In the [Supabase dashboard](https://supabase.com/), create a project and find your Project URL and `anon` API key.
+2. **Add them to the same `.env` file**:
+   ```
+   SUPABASE_URL=https://your-project.supabase.co
+   SUPABASE_KEY=your-anon-key
    ```
 
 ---
